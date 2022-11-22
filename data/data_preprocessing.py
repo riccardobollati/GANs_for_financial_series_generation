@@ -7,7 +7,10 @@ import torch
 from tqdm import tqdm
 
 def get_data(tiker_list, destination):
-    
+    '''
+    this function download all the stocks time series. 
+    The stocks downloaded are contained in the "value_st.csv" file.
+    '''    
     df = pd.read_csv(tiker_list)
     for i in df['Holding Ticker']:
         i = i.replace(' ','')
@@ -17,12 +20,24 @@ def get_data(tiker_list, destination):
         series.iloc[:,4].to_csv(f'{destination}\{i}.csv',index = False)
 
 def get_next_window(series, start, window_len):
+    '''
+    this function return the next windows given an index.
+    ::param series: the series used to generate windows
+    ::param start: the starting index of the window
+    ::param window_len: the lenght of the windows we want to generate
+    '''
     if (start + window_len) > len(series):
         return False
     else:
         return series[start:(start+window_len+1)]
 
 def get_windows(df, window_len):
+    '''
+    given a dataset this function divides it into smaller windows and return them
+    as a list
+    ::param df: source dataset
+    ::param window_len: the lenght of the windows we want to extract
+    '''
     windows = []
     i = 0
     while True:
@@ -35,11 +50,20 @@ def get_windows(df, window_len):
     return windows
 
 def get_returns(file):
+    '''
+    return the returns from the prices
+    ::param file: the source file that contains all the prices 
+    '''
     df = pd.read_csv(f'series/{file}')
     df = np.array(df['Adj Close'])
     return np.diff(df,1)/df[:-1]
 
 def create_windows_df(folder, wind_size):
+    '''
+    create the dataset wich contains all the windows extracted from the original series
+    ::param folder: source folders wich contains all the time series
+    ::param wind_size: lenaght of the windows we want to generate
+    '''
     os.mkdir(f'dataset_{wind_size}_winds')
 
     for file in tqdm(os.listdir(folder)):
@@ -48,6 +72,12 @@ def create_windows_df(folder, wind_size):
         save_single_windows(winds, file.split('.')[0], f'dataset_{wind_size}_winds')
 
 def save_single_windows(winds, tiker, folder):
+    '''
+    save the stock windows
+    ::param winds: the extracted windows
+    ::param ticker: the name of the stock
+    ::param folder: destination folder
+    '''
     
     for index, w in enumerate(winds):
         np.savetxt(f'{folder}\{tiker}_{index}.csv', w, delimiter=',')
