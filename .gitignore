@@ -1,0 +1,10 @@
+data/series
+data/dataset_100_winds
+tensorboard
+zz_archive
+data/__pycache__
+__pycache__
+log_dir
+training_samples
+z_notes
+checkpoints
