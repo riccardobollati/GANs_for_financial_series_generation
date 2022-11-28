@@ -20,7 +20,7 @@ class Generator(nn.Module):
         self.lin1  = nn.Linear(50, 100) #apply linear transformation A^Ta +b
         self.relu1 = nn.LeakyReLU(0.2, inplace=True) #apply poinwise LeakyReLU function
         self.dim1  = AddDimension() # flatten
-
+        #apply spectral normalization
         self.conv1 = nn.Conv1d(1, 32, 3, padding=1)
         self.usam1 = nn.Upsample(200)
 

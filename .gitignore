@@ -1,5 +1,7 @@
 data/series
 data/dataset_100_winds
+data/dataset_price
+
 tensorboard
 zz_archive
 data/__pycache__

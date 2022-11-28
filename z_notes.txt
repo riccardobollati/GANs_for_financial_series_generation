@@ -1,4 +1,0 @@
-problema ne simulare serie con ordini di grandezza piccoli
-scalare le serie * 100 e /100 le serie una volta generate
-
-problema randomizzazione.

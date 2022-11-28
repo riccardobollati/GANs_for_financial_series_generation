@@ -11,7 +11,7 @@ class Trainer:
     NOISE_LENGTH = 50
 
     def __init__(self, generator, critic, gen_optimizer, critic_optimizer,
-                gp_weight, critic_iterations, print_every, checkpoint_frequency, writer):
+                gp_weight, critic_iterations, print_every, checkpoint_frequency, writer, ARCHIVE_DIR):
         self.g = generator
         self.g_opt = gen_optimizer
         self.c = critic
@@ -24,6 +24,7 @@ class Trainer:
         self.print_every = print_every
         self.checkpoint_frequency = checkpoint_frequency
         self.writer = writer
+        self.ARCHIVE_DIR = ARCHIVE_DIR
 
     def _critic_train_iteration(self, real_data):
         '''
@@ -197,14 +198,14 @@ class Trainer:
             self._train_epoch(data_loader, epoch + 1)
 
             # Save checkpoint
-            if epoch % self.checkpoint_frequency == 0:
+            if ((epoch+1) % self.checkpoint_frequency == 0) or (epoch == 0):
                 torch.save({
                     'epoch': epoch,
                     'd_state_dict': self.c.state_dict(),
                     'g_state_dict': self.g.state_dict(),
                     'd_opt_state_dict': self.c_opt.state_dict(),
                     'g_opt_state_dict': self.g_opt.state_dict(),
-                }, 'checkpoints/epoch_{}.pkl'.format(epoch))
+                }, os.path.join(self.ARCHIVE_DIR, 'checkpoints/epoch_{}.pkl'.format(epoch)))
 
             if plot_training_samples and (epoch % self.print_every == 0):
                 #set the module in evaluation mode
@@ -216,12 +217,12 @@ class Trainer:
 
                 plt.figure()
                 plt.plot(fake_data_fixed_latents.numpy()[0].T)
-                plt.savefig('training_samples/fixed_latents/series_epoch_{}.png'.format(epoch))
+                plt.savefig(os.path.join(self.ARCHIVE_DIR, 'training_samples/fixed_latents/series_epoch_{}.png'.format(epoch)))
                 plt.close()
 
                 plt.figure()
                 plt.plot(fake_data_dynamic_latents.numpy()[0].T)
-                plt.savefig('training_samples/dynamic_latents/series_epoch_{}.png'.format(epoch))
+                plt.savefig(os.path.join(self.ARCHIVE_DIR, 'training_samples/dynamic_latents/series_epoch_{}.png'.format(epoch)))
                 plt.close()
                 self.g.train()
 

@@ -49,27 +49,30 @@ def get_windows(df, window_len):
         i += window_len
     return windows
 
-def get_returns(file):
+def get_data(folder, file, returns = False):
     '''
     return the returns from the prices
     ::param file: the source file that contains all the prices 
     '''
-    df = pd.read_csv(f'series/{file}')
+    df = pd.read_csv(f'{folder}/{file}')
     df = np.array(df['Adj Close'])
-    return np.diff(df,1)/df[:-1]
+    if returns:
+        return np.diff(df,1)/df[:-1]
+    else:
+        return df
 
-def create_windows_df(folder, wind_size):
+def create_windows_df(folder, wind_size, destination, get_returns = False):
     '''
     create the dataset wich contains all the windows extracted from the original series
     ::param folder: source folders wich contains all the time series
     ::param wind_size: lenaght of the windows we want to generate
     '''
-    os.mkdir(f'dataset_{wind_size}_winds')
+    os.mkdir(destination)
 
     for file in tqdm(os.listdir(folder)):
-        returns = get_returns(file)
-        winds = get_windows(returns,wind_size)
-        save_single_windows(winds, file.split('.')[0], f'dataset_{wind_size}_winds')
+        data = get_data(folder,file, returns=get_returns)
+        winds = get_windows(data,wind_size)
+        save_single_windows(winds, file.split('.')[0], destination)
 
 def save_single_windows(winds, tiker, folder):
     '''

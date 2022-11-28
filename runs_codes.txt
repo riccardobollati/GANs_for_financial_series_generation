@@ -1,0 +1,16 @@
+000_001:
+    spectral normalization: only critic
+    lambda: 10
+    gradient penalty: 1
+    w init: xavier uniform
+    data : price scaled from 50 to 100
+    ~RESULTS~
+    i risultati sono terribili, andamento non casuale che non assomiglia nemmeno lontananmente ad una serie dei prezzi
+
+000_002:
+    spectral normalization: only critic
+    lambda: 10
+    gradient penalty: 1
+    w init: xavier uniform
+    data : returns MinMaxScaled from -10 to 10
+    ~RESULTS~
