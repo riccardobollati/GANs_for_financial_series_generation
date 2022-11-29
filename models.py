@@ -23,14 +23,17 @@ class Generator(nn.Module):
 
         self.conv1 = nn.Conv1d(1, 32, 3, padding=1)
         self.usam1 = nn.Upsample(200)
+        self.drop1 = nn.Dropout(0.1)
 
         self.conv2 = nn.Conv1d(32, 32, 3, padding=1)
         self.relu2 = nn.LeakyReLU(0.2, inplace=True)
         self.usam2 = nn.Upsample(400)
+        self.drop2 = nn.Dropout(0.1)
 
         self.conv3 = nn.Conv1d(32, 32, 3, padding=1)
         self.relu3 = nn.LeakyReLU(0.2, inplace=True)
         self.usam3 = nn.Upsample(800)
+        self.drop3 = nn.Dropout(0.1)
 
         self.snrm4 = nn.Conv1d(32, 1, 3, padding=1)
         self.relu4 = nn.LeakyReLU(0.2, inplace=True)
@@ -48,14 +51,17 @@ class Generator(nn.Module):
         #apply spectral normalization
         out = self.conv1(out)
         out = self.usam1(out)
+        out = self.drop1(out)
 
         out = self.conv2(out)
         out = self.relu2(out)
         out = self.usam2(out)
+        out = self.drop2(out)
 
         out = self.conv3(out)
         out = self.relu3(out)
         out = self.usam3(out)
+        out = self.drop3(out)
 
         out = self.snrm4(out)
         out = self.relu4(out)

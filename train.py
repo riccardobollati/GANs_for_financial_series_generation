@@ -134,7 +134,7 @@ class Trainer:
         gradients_norm = torch.sqrt(torch.sum(gradients ** 2, dim=1) + 1e-12)
 
         # Return gradient penalty
-        return self.gp_weight * ((gradients_norm - 1) ** 2).mean()
+        return self.gp_weight * ((gradients_norm - 5) ** 2).mean()
 
     def _train_epoch(self, data_loader, epoch):
         '''
