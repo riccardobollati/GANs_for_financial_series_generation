@@ -11,7 +11,8 @@ class Trainer:
     NOISE_LENGTH = 50
 
     def __init__(self, generator, critic, gen_optimizer, critic_optimizer,
-                gp_weight, critic_iterations, print_every, checkpoint_frequency, writer, ARCHIVE_DIR):
+                gp_weight, g_norm_pen, critic_iterations, print_every, checkpoint_frequency, writer, ARCHIVE_DIR):
+                
         self.g = generator
         self.g_opt = gen_optimizer
         self.c = critic
@@ -20,6 +21,7 @@ class Trainer:
         self.num_steps = 0
         #if True it will compute on GPU (but unavailable for my pc)
         self.gp_weight = gp_weight
+        self.g_norm_pen = g_norm_pen
         self.critic_iterations = critic_iterations
         self.print_every = print_every
         self.checkpoint_frequency = checkpoint_frequency
@@ -134,7 +136,7 @@ class Trainer:
         gradients_norm = torch.sqrt(torch.sum(gradients ** 2, dim=1) + 1e-12)
 
         # Return gradient penalty
-        return self.gp_weight * ((gradients_norm - 5) ** 2).mean()
+        return self.gp_weight * ((gradients_norm - self.g_norm_pen) ** 2).mean()
 
     def _train_epoch(self, data_loader, epoch):
         '''

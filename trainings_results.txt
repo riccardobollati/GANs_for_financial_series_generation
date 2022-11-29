@@ -42,3 +42,15 @@
 
 000_005
     like "000_004" but with dropout for each block and setted to 0.1
+
+000_007
+    spectral normalization: only critic
+    models optimizers:
+    - c_opt = torch.optim.Adam(c.parameters(), lr=0.009, betas=[0.5, 0.99])
+    - g_opt = torch.optim.Adam(g.parameters(), lr=0.003, betas=[0.5, 0.99])
+
+    lambda: 10
+    gradient penalty: 5
+    w init: xavier uniform
+    data : scale imput by a factor of 100
+    ~RESULTS~
