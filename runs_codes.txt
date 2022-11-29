@@ -9,8 +9,36 @@
 
 000_002:
     spectral normalization: only critic
+    lr c = 0.05     lr g = 0.1
     lambda: 10
     gradient penalty: 1
     w init: xavier uniform
     data : returns MinMaxScaled from -10 to 10
     ~RESULTS~
+    effetto random presente ma relativamente debole, la scala risulta decisamente sbagliata
+
+♠TOP♠
+000_003:
+    spectral normalization: only critic
+    lr c = 0.05     lr g = 0.1
+    lambda: 10
+    gradient penalty: 5
+    w init: xavier uniform
+    data : returns MinMaxScaled from -10 to 10
+    ~RESULTS~
+    i risultati sono ottimi, il processo è molto realistico se non fosse per la scala che è sbagliata,
+    il processa presenta forse troppi picchi.
+    ♣PROBLEMA♣
+    il processo generato presenta i picchi sempre nelle solite posizioni
+    -> provo l'introduzione di dropout layers
+
+    000_004:
+    altre 40 epochs
+    
+
+000_004:
+    like "000_003" but with dropout layers for generator.
+    il processo presenta un andamento non realistico e una media =! 0
+
+000_005
+    like "000_004" but with dropout for each block and setted to 0.1
