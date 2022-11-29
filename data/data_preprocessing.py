@@ -49,7 +49,7 @@ def get_windows(df, window_len):
         i += window_len
     return windows
 
-def get_data_(folder, file, returns = False):
+def get_data_from_folder(folder, file, returns = False):
     '''
     return the returns from the prices
     ::param file: the source file that contains all the prices 
@@ -70,7 +70,7 @@ def create_windows_df(folder, wind_size, destination, get_returns = False):
     os.mkdir(destination)
 
     for file in tqdm(os.listdir(folder)):
-        data = get_data_(folder,file, returns=get_returns)
+        data = get_data_from_folder(folder,file, returns=get_returns)
         winds = get_windows(data,wind_size)
         save_single_windows(winds, file.split('.')[0], destination)
 
