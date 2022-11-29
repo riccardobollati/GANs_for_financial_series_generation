@@ -81,12 +81,10 @@ class Rescale:
         min_pick = np.random.uniform(low=low_rnd_min, high=up_rnd_min)
 
 
-        print(min_pick)
         max_sample = sample.max().item()
         min_sample = sample.min().item()
-
+        sample = sample.detach().numpy()
         X_std = (sample - min_sample) / (max_sample - min_sample)
-        X_std = X_std.detach().numpy()
         X_scaled = X_std * (max_pick - min_pick) + min_pick
 
         return X_scaled

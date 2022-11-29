@@ -6,7 +6,7 @@ from models import Generator
 import matplotlib.pyplot as plt
 from scipy.stats import t
 import statistics
-import math
+import math 
 
 from create_dataset import WindowsDaset
 import numpy as np

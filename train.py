@@ -11,7 +11,7 @@ class Trainer:
     NOISE_LENGTH = 50
 
     def __init__(self, generator, critic, gen_optimizer, critic_optimizer,
-                gp_weight, g_norm_pen, critic_iterations, print_every, checkpoint_frequency, writer, ARCHIVE_DIR):
+                gp_weight, g_norm_pen, critic_iterations, print_every, checkpoint_frequency, ARCHIVE_DIR):
                 
         self.g = generator
         self.g_opt = gen_optimizer
@@ -25,7 +25,6 @@ class Trainer:
         self.critic_iterations = critic_iterations
         self.print_every = print_every
         self.checkpoint_frequency = checkpoint_frequency
-        self.writer = writer
         self.ARCHIVE_DIR = ARCHIVE_DIR
 
     def _critic_train_iteration(self, real_data):
@@ -155,16 +154,6 @@ class Trainer:
             # Only update generator sometimes
             if self.num_steps % self.critic_iterations == 0:
                 self._generator_train_iteration(data)
-
-                # refresh the tensorboard
-                if i % self.print_every == 0:
-                    global_step = i + epoch * len(data_loader.dataset)
-                    self.writer.add_scalar('Losses/Critic', self.losses['c'][-1], global_step)
-                    self.writer.add_scalar('Losses/Gradient Penalty', self.losses['GP'][-1], global_step)
-                    self.writer.add_scalar('Gradient Norm', self.losses['gradient_norm'][-1], global_step)
-
-                    if self.num_steps > self.critic_iterations:
-                        self.writer.add_scalar('Losses/Generator', self.losses['g'][-1], global_step)
 
     def train(self, data_loader, epochs, plot_training_samples=True, checkpoint=None):
         '''
