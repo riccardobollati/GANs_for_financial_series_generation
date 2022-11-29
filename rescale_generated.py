@@ -86,6 +86,7 @@ class Rescale:
         min_sample = sample.min().item()
 
         X_std = (sample - min_sample) / (max_sample - min_sample)
+        X_std = X_std.detach().numpy()
         X_scaled = X_std * (max_pick - min_pick) + min_pick
 
         return X_scaled
