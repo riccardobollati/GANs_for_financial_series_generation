@@ -83,7 +83,7 @@ def save_single_windows(winds, tiker, folder):
     '''
     
     for index, w in enumerate(winds):
-        np.savetxt(f'{folder}\{tiker}_{index}.csv', w, delimiter=',')
+        np.savetxt(os.path.join(folder,f'{tiker}_{index}.csv'), w, delimiter=',')
        
     
 
