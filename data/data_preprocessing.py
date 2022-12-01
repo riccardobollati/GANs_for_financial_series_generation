@@ -89,31 +89,63 @@ def save_single_windows(winds, tiker, folder):
 
 class WindowsDaset(Dataset):
     
-    def __init__(self, data_dir, transform = None):
+    def __init__(self, data_dir, transform = None, data = 'returns'):
         self.data_dir = data_dir
-
         self.transform = transform
+        self.data = data
     
     def __len__(self):
         return len(os.listdir(self.data_dir))
 
     def __getitem__(self, idx):
-        if type(idx) == list:
-            response = []
-            for i in idx:
-                path = os.path.join(self.data_dir, os.listdir(self.data_dir)[i])
-                series = torch.tensor(np.genfromtxt(path, delimiter=',')[1:])
-                response.append(series)
-            
-            if self.transform:
-                response = [self.transform(i) for i in response]
-
-            return response
-        else:
-            path = os.path.join(self.data_dir, os.listdir(self.data_dir)[idx])
-            series = torch.tensor(np.genfromtxt(path, delimiter=',')[1:])
-
-            if self.transform:
-                series = self.transform(series)
+        
+        if self.data == 'returns':
+            if type(idx) == list:
+                response = []
+                for i in idx:
+                    path = os.path.join(self.data_dir, os.listdir(self.data_dir)[i])
+                    series = torch.tensor(np.genfromtxt(path, delimiter=',')[1:])
+                    response.append(series)
                 
-            return series
+                if self.transform:
+                    response = [self.transform(i) for i in response]
+
+                return response
+            else:
+                path = os.path.join(self.data_dir, os.listdir(self.data_dir)[idx])
+                series = torch.tensor(np.genfromtxt(path, delimiter=',')[1:])
+
+                if self.transform:
+                    series = self.transform(series)
+                    
+                return series
+        else:
+            if type(idx) == list:
+                response = []
+                for i in idx:
+                    path = os.path.join(self.data_dir, os.listdir(self.data_dir)[i])
+                    series = torch.tensor(np.genfromtxt(path, delimiter=',')[1:])
+
+                    generated_price = []
+        
+                    init = 1
+
+                    for p in series:
+                        init = init + init * p.item()
+                        generated_price.append(init)
+                    
+                    response.append(generated_price)
+
+                return response
+            else:
+                path = os.path.join(self.data_dir, os.listdir(self.data_dir)[idx])
+                series = torch.tensor(np.genfromtxt(path, delimiter=',')[1:])
+
+                generated_price = []
+        
+                init = 1
+                for p in series:
+                    init = init + init * p.item()
+                    generated_price.append(init)
+                    
+                return generated_price
