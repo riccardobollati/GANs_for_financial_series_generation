@@ -3,6 +3,11 @@ import shutil
 import torch
 import matplotlib.pyplot as plt
 import numpy as np
+from sklearn.linear_model import LinearRegression
+from models import Generator
+import tkinter as tk
+from tkinter import filedialog
+
 
 def create_dir(location, name):
     os.mkdir(os.path.join(location, name))
@@ -21,14 +26,29 @@ def generate_sample(model, n_samples = 1):
         samples.append(pr)
     return samples
 
-def plot_samples_price(sample):
+def regression(prices, only_resid = False):
 
-    fig, axs = plt.subplots(len(sample), 2)
+    linear_reg = LinearRegression(fit_intercept=True)
+    linear_reg.fit(np.linspace(1,100, num=100).reshape(-1,1), prices)
+    prediction = linear_reg.predict(np.linspace(1,100, num=100).reshape(-1,1))
+    residuals = (prices - prediction)
+    coef = linear_reg.coef_
+
+    if only_resid:
+        return residuals
+    else:
+        return prediction, residuals, coef
+
+def plot_samples_price(sample, return_series = False, save = None):
+
+    fig, axs = plt.subplots(len(sample), 3)
     fig.set_facecolor('white')
-    fig.set_figheight(17)
+    fig.set_figheight(3.5*len(sample))
     fig.set_figwidth(12)
 
-    prices = []
+    prices_list = []
+    residuals_list = []
+    coeff_list = []
 
     for ax, samp in zip(axs, sample):
 
@@ -50,6 +70,32 @@ def plot_samples_price(sample):
         ax[1].plot(generated_price)
         ax[1].set_title('Prices', fontsize=8)
         
-        prices.append(generated_price)
-    
-    return prices
+        prediction, residuals, coef = regression(generated_price)
+
+        prices_list.append(generated_price)
+        residuals_list.append(residuals)
+        coeff_list.append(coef)
+
+        ax[1].plot(prediction, color = 'red', alpha = 0.6)
+
+        ax[2].scatter(np.linspace(1,100, num=100),residuals)
+        ax[2].axhline(0, color = 'black', ls ='--')
+        ax[2].set_title(f'var: {np.round(np.var(residuals),4)}')
+
+    if save:
+        plt.savefig(save)
+
+    if return_series:
+        return prices_list, residuals_list, coeff_list
+
+def load_model():
+    root = tk.Tk()
+    root.withdraw()
+    file_path = filedialog.askopenfilename()
+    print(f'the model has been selected: {file_path}')
+
+    #instantiate the model
+    g = Generator()
+    g.load_state_dict(torch.load(file_path)['g_state_dict'])
+
+    return g

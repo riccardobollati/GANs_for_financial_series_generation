@@ -4,11 +4,12 @@ from tqdm import tqdm
 
 class Rescale:
     
-    def __init__(self, data_set) -> None:
+    def __init__(self, data_set, picks_range) -> None:
         
         print('~Scaler initialization~')
         self.data_set = data_set
         self.len = len(data_set)
+        self.picks_range = picks_range
         
         print('~computing the min and max quantiles~')
         maxes = np.zeros(len(data_set))
@@ -51,7 +52,7 @@ class Rescale:
         dist_index =  np.where(sorted_q == dist)[0]
         if dist_index == 9:
             low_rnd_max = q_max[8]
-            up_rnd_max  = q_max[8]+0.1
+            up_rnd_max  = q_max[8]+ self.picks_range
         elif dist_index == 0:
             up_rnd_max  = q_max[0]
             low_rnd_max = q_max[0] -0.01
@@ -74,7 +75,7 @@ class Rescale:
             up_rnd_min  = q_min[8]+0.01
         elif dist_index_min == 0:
             up_rnd_min  = q_min[0]
-            low_rnd_min = q_min[0] -0.1
+            low_rnd_min = q_min[0] - self.picks_range
         else:
             low_rnd_min = q_min[dist_index_min-1]
             up_rnd_min = q_min[dist_index_min]
