@@ -1,49 +1,59 @@
-#from models import Generator
-import torch
-import tkinter as tk
-from tkinter import filedialog
-from models import Generator
-import matplotlib.pyplot as plt
 from scipy.stats import t
 import statistics
 import math 
 
-from create_dataset import WindowsDaset
 import numpy as np
-import plot_comparison
+import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
+import numpy as np
+import os
 
-#select the model to use
-root = tk.Tk()
-root.withdraw()
-file_path = filedialog.askopenfilename()
-print(f'the model has been selected: {file_path}')
+def plot_series(series, name:str, folder = None):
+    
+    series_to_plot = []
+    for i in np.random.randint(0, len(series),size=8):
+        series_to_plot.append(series[i])
 
-#define the number of instance to sample
-number_of_samples = int(input('number of samples: '))
+    fig = plt.figure(figsize=(10, 5))
+    outer = gridspec.GridSpec(2, 1, wspace=0.2, hspace=0.2)
 
-#instantiate the model
-g = Generator()
-g.load_state_dict(torch.load(file_path)['g_state_dict'])
 
-#real data dataset
-dataset = WindowsDaset(r'C:\Users\bolla\Desktop\CUHK_courses\IASP_elisa\final\data\dataset_100_winds')
+    inner_1 = gridspec.GridSpecFromSubplotSpec(2, 4,
+                    subplot_spec=outer[0], wspace=0.3, hspace=0.1)
 
-def samples(model, n_samples):
+    for ax, serie in zip(inner_1, series_to_plot):
+
+        ax = plt.Subplot(fig, ax)
+        ax.plot(serie)
+        fig.add_subplot(ax)
+
+    inner_2 = gridspec.GridSpecFromSubplotSpec(1, 1,
+                    subplot_spec=outer[1], wspace=0.1, hspace=0.1)
+
+
+    ax = plt.Subplot(fig, inner_2[0])
+    ax.hist(series.ravel(), bins = 100)
+    #ax.set_xlim(-0.25,0.25)
+    ax.axvline(series.ravel().mean(), color = 'red', ls='--')
+    fig.add_subplot(ax)
+
+    if folder:
+        plt.savefig(os.path.join(folder, f'{name}.png'))
+    else:
+        plt.show()
+
+def samples(data_set, sample_generator, n_samples):
     '''
     this function sample n instance from the dataset and generate n
     series using the model chosen
     '''
-    generated_series = []
-    for i in range(n_samples):
-        serie = model(torch.rand((1,50)))/1000
-        generated_series.append(serie.detach().numpy().ravel())
+    generated_series, it = sample_generator(n_samples)
 
-    
     real_series = []
-    for i in np.random.randint(0, len(dataset),size=n_samples):
-        real_series.append(dataset[i].numpy())
+    for i in np.random.randint(0, len(data_set),size=n_samples):
+        real_series.append(data_set[i].numpy())
 
-    return np.array(real_series), np.array(generated_series)
+    return np.array(real_series), np.array(generated_series), it
 
 #test media = 0
 def mean_average(real_serie, generated_serie, alpha):
@@ -71,14 +81,9 @@ def mean_average(real_serie, generated_serie, alpha):
         print('H0 rejected')
     else:
         print('H0 accepted')
-
-
-real_series, generated_series = samples(g, number_of_samples)
-
-plot_comparison.plot_series(generated_series)
-mean_average(real_series.ravel(), generated_series.ravel(),0.1)
-
-
-
+    
+def save_samples_dist(real, generated, folder):
+    plot_series(generated,'generated', folder)
+    plot_series(real,'real', folder)
 
 

@@ -1,9 +1,10 @@
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import numpy as np
+import os
 
 
-def plot_series(series):
+def plot_series(series, name:str, folder = None):
     
     series_to_plot = []
     for i in np.random.randint(0, len(series),size=8):
@@ -32,4 +33,7 @@ def plot_series(series):
     ax.axvline(series.ravel().mean(), color = 'red', ls='--')
     fig.add_subplot(ax)
 
-    plt.show()
+    if folder:
+        plt.savefig(os.path.join(folder, f'{name}.png'))
+    else:
+        plt.show()

@@ -3,35 +3,34 @@ import torch
 from utils import regression
 from sklearn.preprocessing import MinMaxScaler
 from rescale_generated import Rescale
-import data.data_preprocessing as data_prep
+from evaluate_model.create_dataset import WindowsDaset
+
 
 class DfGenerator:
 
-    def __init__(self, variance_th, mean_boundary, max_range, generator, size, data_set = None, rescaler = None) -> None:
+    def __init__(self, variance_th:list, mean_boundary:float, max_range:float, generator, data_set = None, rescaler = None):
         
         self.variance_th = variance_th
         self.generator   = generator
-        self.size        = size
         self.mean_bond   = mean_boundary
         self.max_range   = max_range
 
         if rescaler:
             self.rescaler = rescaler
         else:
-            dataset = data_prep.WindowsDaset(data_set)
+            dataset = WindowsDaset(data_set)
             self.rescaler = Rescale(dataset)
 
         
-
-    def __call__(self):
+    def __call__(self,size):
 
         syntetic_df = []
         diff        = []
 
         it = 0
-        while len(syntetic_df) < self.size:
+        while len(syntetic_df) < size:
             
-            print(f'iteration N: {it}', end='\r')
+            print(f'found: {len(syntetic_df)}/{size} over {it} iterations', end='\r')
             generated = self.generator(torch.rand((1,50)))
             scaled = self.rescaler.scale(generated.flatten())
 
@@ -55,13 +54,13 @@ class DfGenerator:
                 cumulative_difference += abs(abs(resid[i]) - abs(resid[i+1]))
             
 
-            if cumulative_difference >= self.variance_th:
+            if cumulative_difference >= self.variance_th[0] and cumulative_difference <= self.variance_th[1]:
                 syntetic_df.append(scaled)
                 diff.append(cumulative_difference)
         
             it += 1
         
-        return syntetic_df, diff
+        return syntetic_df, it
 
 
 
