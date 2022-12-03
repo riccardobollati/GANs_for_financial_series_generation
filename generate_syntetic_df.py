@@ -31,7 +31,7 @@ class DfGenerator:
         it = 0
         while len(syntetic_df) < self.size:
             
-            print(f'iteration N: {it}', flush=True)
+            print(f'iteration N: {it}', end='\r')
             generated = self.generator(torch.rand((1,50)))
             scaled = self.rescaler.scale(generated.flatten())
 
@@ -54,7 +54,6 @@ class DfGenerator:
             for i in range(len(resid)-1):
                 cumulative_difference += abs(abs(resid[i]) - abs(resid[i+1]))
             
-            print('okokok ', cumulative_difference)
 
             if cumulative_difference >= self.variance_th:
                 syntetic_df.append(scaled)

@@ -19,11 +19,14 @@ def create_dir(location, name):
     return os.path.join(location, name)
 
 # the following function allow to generate a sample to test the model
-def generate_sample(model, n_samples = 1):
+def generate_sample(model, n_samples = 1, tensor = True):
     samples = []
     for i in range(n_samples):
         pr = model(torch.rand((1,50)))
-        samples.append(pr)
+        if tensor:
+            samples.append(pr)
+        else:
+            samples.append(pr.detach().numpy())
     return samples
 
 def regression(prices, only_resid = False):
