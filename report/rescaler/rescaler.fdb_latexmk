@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1670036452 "c:/Users/bolla/Desktop/CUHK_courses/IASP_elisa/final/report/rescaler/rescaler.tex" "rescaler.pdf" "rescaler" 1670036453
+["pdflatex"] 1670040573 "c:/Users/bolla/Desktop/CUHK_courses/IASP_elisa/final/report/rescaler/rescaler.tex" "rescaler.pdf" "rescaler" 1670040574
   "C:/Users/bolla/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1667112951 80937 91001db6d4ae332437b4b739862cda02 ""
   "C:/Users/bolla/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1663552530 11548 d6046664392cf5cd96e67d4cdf8d277f ""
   "C:/Users/bolla/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1663321486 10785261 90a3f2d683350828d993ce999361f278 ""
@@ -42,12 +42,12 @@
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1661885168 30282 33c465a64f2bd5ad4a68a7b2f555a29b ""
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1636710260 32262 2bb622a0aa56c4a7a5cbdfe9d122c15a ""
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/tex/latex/was/gensymb.sty" 1081479500 4755 29d19942d7123701aa6a3876b9ba11b1 ""
-  "c:/Users/bolla/Desktop/CUHK_courses/IASP_elisa/final/report/rescaler/rescaler.tex" 1670036451 3374 e6afc06896023e590b87e9a5b70a485b ""
+  "c:/Users/bolla/Desktop/CUHK_courses/IASP_elisa/final/report/rescaler/rescaler.tex" 1670040542 3712 0f7eb1549a19ffea5b7cd42c8a48fd3c ""
   "imgs/EX_03.png" 1670035791 105168 a35eb16f37a6f923d388bd10e9944123 ""
   "imgs/big_peaks.png" 1669819913 64024 0db134e45c009602ee5980a24545448e ""
   "imgs/small_peaks.png" 1669820025 73938 012b184a6c51b1fa278646bf81ea0469 ""
-  "rescaler.aux" 1670036453 252 1fd4d2e1d7d570aceb5cd2dc5d7bbd8c "pdflatex"
-  "rescaler.tex" 1670036451 3374 e6afc06896023e590b87e9a5b70a485b ""
+  "rescaler.aux" 1670040573 252 62c4b91022d331b1d98fa71b5e144e65 "pdflatex"
+  "rescaler.tex" 1670040542 3712 0f7eb1549a19ffea5b7cd42c8a48fd3c ""
   (generated)
   "rescaler.aux"
   "rescaler.log"
