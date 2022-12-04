@@ -7,6 +7,9 @@
 
 <h4>Stefan Huber</h4>
 
+# Introduction
+Given the issue of limited real usable data for quantitative research purposes, we successfully addressed the problem by simulating financial time series. We introduce the Wasserstein GAN (GANs) and tested it on the value stock index of the S&P500. The GAN model produces a time-series that recovers the statistical properties of financial time-series such as the linear unpredictability, the heavy-tailed price return distribution, volatility clustering, leverage effects, the coarse-fine volatility correlation, and the gain/loss asymmetry. 
+
 # Aim of the progect:
 
 The aim of the project is to create a GAN capable of generating realistic financial time series. The folders are divided in:
