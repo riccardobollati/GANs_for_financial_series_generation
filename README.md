@@ -17,7 +17,7 @@ The aim of the project is create a GAN capable of generating realistic financial
 
 # Download the data:
 
-to donwload the data use the code contained in the data folder
+to donwload the data is possible to use the code contained in the folder "data". In the file real_data_gen.ipynb is possible to find all function to download the dataset from Yahoo, divide the series into windows and save them. The last function of the file clean the dataset to avoid any possible error due to windows len.
 
 # Model Architechture
 
