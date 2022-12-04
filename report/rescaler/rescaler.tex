@@ -34,8 +34,8 @@
     \end{itemize}  
     Taking into consideration the nature of the sample taken, it is very unlikely to have two big shocks in the same window. Following this logic, when the $1^{st}$ and $2^{nd}$ peaks in a serie are close, we can conclude they are probably just strong movements in the price. Again, when the $1^{st}$ peak in terms of magnitude is way bigger than the $2^{nd}$, it is unlinkely to have price movements with this elevated magnitude, in very small ranges. We can note that since the usual price movement of these kind of stocks falls between a range of -0.01\% and 0.01\%, It seems reasonable to apply the scalar function to get an ultimate generated serie that can be used for data analysis purposes while reflecting the true nature of the financial asset. 
     \subsection*{Scalar Logic}
-    Baset on the above reasonment the Scalar aims assign to "lonley" peaks in the generated series the value that usually shocks have in the real data 
-    and assign to close peacks value that are typical of strong market movements.
+    Based on the above reasonment, the scalar assigns the value that usually shocks have in real data, to isolated peaks in the generated serie, adjusting it to a value plausible in real scenarios.
+    It also assigns values typical of strong market movements, to peaks very close to each other.
     \subsection*{Scalar Implementation}
     To do It the scalar compute the quantiles of the max values distribution and same thing for the distribution of the difference between the $1^{st}$ and 
     $2^{nd}$ peaks.\\
