@@ -1,4 +1,4 @@
-# GANs_for_financial_series_generation
+# GANs for financial series generation
 # Projects Admins:
 
 <h3>Riccardo Bollati</h3>
@@ -10,6 +10,3 @@
 # Download the data:
 
 to donwload the data use the code contained in the data folder
-Elisa Carucci
-Riccardo Bollati
-Stefan Huber
