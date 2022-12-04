@@ -1,13 +1,13 @@
 # GANs for financial series generation
-# Projects Admins:
+<h2>Project team:</h2>
 
-<h3>Riccardo Bollati</h3>
+<h4>Riccardo Bollati</h4>
 
-<h3>Elisa Carucci</h3>
+<h4>Elisa Carucci</h4>
 
-<h3>Stefan Huber</h3>
+<h4>Stefan Huber</h4>
 
-#Aim of the progect:
+# Aim of the progect:
 
 The aim of the project is create a GAN capable of generating realistic financial time series. The folders of the projects have the functions:
 
