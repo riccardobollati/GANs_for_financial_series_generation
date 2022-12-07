@@ -56,27 +56,26 @@ def samples(data_set, sample_generator, n_samples):
     return np.array(real_series), np.array(generated_series), it
 
 #test media = 0
-def mean_average(real_serie, generated_serie, alpha):
+def mean_average(generated_serie, alpha):
     '''
     this function test if the generated sample mean is equal to
     the real data sample
     '''
-    n    = len(real_serie)
+    n    = len(generated_serie)
     df   = n-1
 
-    mu_0 = statistics.mean(real_serie)
 
     gen_mean = statistics.mean(generated_serie)
     gen_var  = statistics.variance(generated_serie)
     t_alpha = t.ppf(alpha, df = df)
 
-    h_alpha_upper = mu_0 + t_alpha * (math.sqrt(gen_var)/math.sqrt(n))
-    h_alpha_lower = mu_0 - t_alpha * (math.sqrt(gen_var)/math.sqrt(n))
+    h_alpha_upper = + t_alpha * (math.sqrt(gen_var)/math.sqrt(n))
+    h_alpha_lower = - t_alpha * (math.sqrt(gen_var)/math.sqrt(n))
 
     print(f'rejection theshold: {np.round(h_alpha_upper,5)} - {np.round(h_alpha_lower,5)}')
     print(f'sample mean: {gen_mean}')
 
-    stat_test = (gen_mean-mu_0/math.sqrt(gen_var/n))
+    stat_test = (gen_mean/math.sqrt(gen_var/n))
     if (stat_test >= h_alpha_upper) or (stat_test <= h_alpha_lower):
         print('H0 rejected')
     else:

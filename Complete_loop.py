@@ -67,7 +67,7 @@ class ScaleInput:
 
 if __name__ == '__main__':
 
-    Train_ = bool(input('input 1 for training [0] for not training ') or 0)
+    Train_ = bool(int(input('input 1 for training [0] for not training ')) or 0)
     #results destination folder for generated img:
     input('select a destination folder for plots and model...')
     destination_f = filedialog.askdirectory()
@@ -77,8 +77,7 @@ if __name__ == '__main__':
     dataset, dataset_folder = select_dataset()
     picks_range = float(input('select a range for the highest/lowest peacks: '))
 
-    print('initializing the Rescaler...')
-    rescaler = Rescale(dataset, picks_range=picks_range)
+    
 
     if Train_:
         from models import Critic
@@ -125,7 +124,8 @@ if __name__ == '__main__':
     #n_samples to show:
     n_samples = int(input('decide how many samples to show: '))
 
-
+    print('initializing the Rescaler...')
+    rescaler = Rescale(dataset, picks_range=picks_range)
 
     #plot generated series
     sample, scaled = plot_generated_r(generator=g,
@@ -134,8 +134,8 @@ if __name__ == '__main__':
                     folder=destination_f)
     
     #generate syntetic series
-    syn_num = int(input('select the number of syntetic series to generate: '))
-    df_generator = DfGenerator(variance_th=[5,7], mean_boundary = 0.009, max_range=0.15, generator=g, rescaler=rescaler)
+    syn_num = int(input('select the number of syntetic series to generate for the plot: '))
+    df_generator = DfGenerator(variance_th=[6,8], max_range=0.15, generator=g, rescaler=rescaler)
     syntetic_df, it = df_generator(syn_num)
 
     utils.plot_samples_price(syntetic_df, save=os.path.join(destination_f, 'syntetic prices.png'), return_series=False)
@@ -150,7 +150,7 @@ if __name__ == '__main__':
     print(f'syntetic data generated within {it} iterations')
 
     print('saving samples distributions')
-    evaluate_model.mean_average(real.ravel(), generated.ravel(),0.1)
+    evaluate_model.mean_average(generated.ravel(),0.05)
     evaluate_model.save_samples_dist(real, generated, destination_f)
     
 

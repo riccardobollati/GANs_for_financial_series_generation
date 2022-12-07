@@ -7,22 +7,28 @@ from evaluate_model.create_dataset import WindowsDaset
 
 
 class DfGenerator:
-
-    def __init__(self, variance_th:list, mean_boundary:float, max_range:float, generator, data_set = None, rescaler = None):
+    
+    def __init__(self, variance_th:list, max_range:float, generator, data_set = None, rescaler = None) -> None:
         
         self.variance_th = variance_th
         self.generator   = generator
-        self.mean_bond   = mean_boundary
         self.max_range   = max_range
 
         if rescaler:
             self.rescaler = rescaler
         else:
+            #initialize the dataset
             dataset = WindowsDaset(data_set)
+            #initialize the rescaler
             self.rescaler = Rescale(dataset)
 
         
-    def __call__(self,size):
+    def __call__(self,size:int) -> list:
+        '''
+        this function generates a dataset of len size that satisfies the arguments passed to the filter
+        returning a list of samples.
+        ::param:size: the size of the syntetic dataset we wanto to generate  
+        '''
 
         syntetic_df = []
         diff        = []
@@ -40,7 +46,7 @@ class DfGenerator:
                 init = init + init * p.item()
                 generated_price.append(init)
             
-            if (abs(np.mean(scaled)) > self.mean_bond) or (generated_price[-1] >= 1 + self.max_range) or (generated_price[-1] <= 1 - self.max_range):
+            if (generated_price[-1] >= 1 + self.max_range) or (generated_price[-1] <= 1 - self.max_range):
                 it += 1
                 continue
             
