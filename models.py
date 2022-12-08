@@ -35,7 +35,7 @@ class Generator(nn.Module):
         self.usam3 = nn.Upsample(800)
         self.drop3 = nn.Dropout(0.1)
 
-        self.snrm4 = nn.Conv1d(32, 1, 3, padding=1)
+        self.conv4 = nn.Conv1d(32, 1, 3, padding=1)
         self.relu4 = nn.LeakyReLU(0.2, inplace=True)
 
         self.sq   = SqueezeDimension()
@@ -63,7 +63,7 @@ class Generator(nn.Module):
         out = self.usam3(out)
         out = self.drop3(out)
 
-        out = self.snrm4(out)
+        out = self.conv4(out)
         out = self.relu4(out)
 
         out = self.sq(out)
