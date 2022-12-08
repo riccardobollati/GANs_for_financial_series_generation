@@ -10,11 +10,15 @@ def get_data(tiker_list, destination):
     '''
     this function download all the stocks time series. 
     The stocks downloaded are contained in the "value_st.csv" file.
-    '''    
+    '''   
+    os.mkdir(destination) 
+
     df = pd.read_csv(tiker_list)
-    for i in df['Holding Ticker']:
+
+    for i in (pbar := tqdm(df['Holding Ticker'])):
         i = i.replace(' ','')
-        print(f'downloading: {i}')
+        pbar.set_description(f'downloading: {i}')
+        #print(f'downloading: {i}',flush=True)
         series = yf.download(i, progress=False)
         series.reset_index(drop=True,inplace=True)
         series.iloc[:,4].to_csv(f'{destination}\{i}.csv',index = False)
@@ -69,7 +73,8 @@ def create_windows_df(folder, wind_size, destination, get_returns = False):
     '''
     os.mkdir(destination)
 
-    for file in tqdm(os.listdir(folder)):
+    for file in (pbar := tqdm(os.listdir(folder))):
+        pbar.set_description(f"processing {file.split('.')[0]}")
         data = get_data_from_folder(folder,file, returns=get_returns)
         winds = get_windows(data,wind_size)
         save_single_windows(winds, file.split('.')[0], destination)
