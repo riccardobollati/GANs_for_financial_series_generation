@@ -8,7 +8,7 @@
 <h4>Stefan Huber</h4>
 
 # Introduction:
-Given the issue of limited real usable data for quantitative research purposes, we successfully addressed the problem by simulating financial time series. We introduced the Wasserstein GAN (GANs) and tested it on the value stock index of the S&P500. The GAN model has the property of producing time-series that recover the statistical properties of financial time-series such as the linear unpredictability, the heavy-tailed price return distribution, volatility clustering, leverage effects, the coarse-fine volatility correlation, and the gain/loss asymmetry. We were able to get satisfactory results by integrating a post processing algorithm to adjust the volatility peaks that were found to be out of the normal rang, with respect to the original data. 
+Given the issue of limited real usable data for quantitative research purposes, we successfully addressed the problem by simulating financial time series. We introduced the Wasserstein GAN (GANs) and tested it on the value stock index of the S&P500. The GAN model has the property of producing time-series that recover the statistical properties of financial time-series such as the linear unpredictability, the heavy-tailed price return distribution, volatility clustering, leverage effects, the coarse-fine volatility correlation, and the gain/loss asymmetry. We were able to get satisfactory results by integrating a post processing algorithm to adjust the volatility peaks that were found to be out of the normal rang, with respect to the original data. Our next step is to do a training on other types of financial assets and compare the results (ej. volatile stocks, ETFs).
 
 # Aim of the progect:
 
