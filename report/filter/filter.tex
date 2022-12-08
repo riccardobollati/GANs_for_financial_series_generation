@@ -21,23 +21,23 @@
         \includegraphics[scale=0.49]{imgs/serie_comp_1.png}
         \includegraphics[scale=0.49]{imgs/serie_comp_2.png}
     \end{center}
-    as we can see the first serie is very realistic while the other is completly out of scale and present a trend that is not 
-    typical of fiancial time series. To solve this problem we created a filter that chose from the samples generated the realistic series without modifyng the model output, so we end up with a realistic series dataset.
+    As we can see, the first series is very realistic while the other one is completly out of scale and shows a trend that is not 
+    typical for fiancial time series. In order to solve this problem, we created a filter that selects from the samples generated the realistic series without modifyng the model output, so we end up with a realistic series dataset.
     \section*{How It works}
-    To select the realistic series we came up with bunch of metrics, the value of these metrics can be tuned in the filter paramethers:
+    To select the realistic series we came up with several metrics, the value of which can be tuned in the filter parameters:
     \paragraph*{Distance between residuals}
-    We noticed that once we apply a linear regression to a serie the distance between consecutive residuals is smaller when the serie has a not relistic behavior, 
-    while when we have a realistic serie the discance between consecutive points residuals is bigger.
+    We noticed that once we apply a linear regression to a series, the distance between consecutive residuals is smaller when the series shows an unrelistic behavior.
+    In contrast, when we have a more realistic series the discance between consecutive points residuals is bigger.
     \begin{center}
         \includegraphics[scale=0.6]{imgs/2_res.png}
     \end{center}
-    What we did is take the price of the generated serie, scaling it between 0 and 1 to make it comparable and apply a linear regression to it. Once we obtainid the linear regression we computed the summation of the distance between consecutive residuals. 
-    What the filter does at this point is just select the series which summation of consecutive residuals is within a given threshold.\\
+    We scaled the price of the generated series between 0 and 1 to make it comparable and applied a linear regression to it. Once we obtained the linear regression, we computed the summation of the distance between consecutive residuals. 
+    At this point, the filter just selects the series in which the summation of consecutive residuals is within a given threshold.\\
     \textbf{DfGenerator paramether}:  \textbf{variance\_th}.
     \paragraph*{Maximum range of oscillation}
-    We decided to introcuce in the filter a paramether to chose the maximum range of oscillation between the first point an the last one in percentage. This because we think it could be usefull for the porpouse to have the freedom to decide the type of series we want 
-    to generate to expand our dataset. Maybe we want to expand our dataset with very volatile series, in this case we can chose to use an hight max range of osscilation. One the other side oure need could be to expand our dataset with more stable series, maybe to decrease 
-    the volatility of the predictions made by a model, in that case we can tune the paramether chosing a lower max range.\\
+    We decided to introcuce a parameter in the filter to chose the maximum range of oscillation between the first point an the last one in percentage. This is because we think it could be useful to have the freedom to decide the type of series we want 
+    to generate to expand our dataset. Potentially we want to expand our dataset with very volatile series, in this case we can chose to use an hight max range of osscilation. Alternatively, our need could be to expand our dataset with more stable series, for example in order to decrease 
+    the volatility of the predictions made by a model. In that case we can tune the parameter chosing a lower max range.\\
     \textbf{DfGenerator paramether}:  \textbf{max\_range}.
 
     \end{multicols}
@@ -45,12 +45,12 @@
     \begin{center}
         {\huge{Final Results}}
     \end{center} 
-    the final result of the project is a program capable of generate realistic financial series such the followings:
+    The final result of the project is a program capable of generate realistic financial series such the following:
     \begin{center}
         \includegraphics[scale=0.5]{imgs/results_reduced.png}
     \end{center}
     \newpage
-    the generated series compared with some real series look like that the generated series are shown with a grey background:
+    The generated series are visually similar to the original series. In the graph, the generated series are represented with a grey background to distinguish them from the original ones:
     \begin{center}
         \includegraphics[scale=0.5]{imgs/series_comparison_README.png}
     \end{center}
