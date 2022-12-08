@@ -25,8 +25,9 @@ Finally a Leaky ReLU applies an element-wise nonlinear function to the input dat
 
 \section{The Discriminator}
 The discriminator, also called critic, takes in the generated time series or the original ones as input and returns a single number, indicating whether it predicts the input to be an original or generated time series. With respect to its architecture the critic is very similar to the generator. \\
-The first layer adds an extra dimension to the input data, which is necessary for the subsequent convolutional layers. The next three layers are 1D convolutional layers, which apply a convolution operation to the input data. This operation is a way of extracting local spatial information from the input data. The convolution is followed by a Leaky ReLU nonlinearity, which applies a nonlinear function element-wise to the input data. The convolution is also followed by a max pooling operation, which reduces the size of the data by taking the maximum value within a local neighborhood of each element. \\
-The next three layers are fully-connected (i.e., linear) layers, which apply a matrix multiplication and a bias term to the input data. These are followed by Leaky ReLU nonlinearities, which apply a nonlinear function element-wise to the input data. The final layer produces a single output value, indicating whether the input data is real or fake.
+At first it adds an extra dimension to the input data, which is necessary for the subsequent convolutional layers. Three 1D convolutional layers follow, which apply a convolution operation to the input data to extract local spatial information from the input data. We use spectral normalization to increase training stability as Savasta \& Politano (2020) suggest. Again, the convolution is followed by a Leaky ReLU nonlinearity, which applies a nonlinear function element-wise to the input data. The convolution is also followed by a max pooling operation, which reduces the size of the data by taking the maximum value within a local neighborhood of each element. \\
+The next three layers are fully-connected (i.e., linear) layers with varying sizes, which apply a matrix multiplication and a bias term to the input data. These also have Leaky ReLU nonlinearities. The final layer produces a single output value, indicating whether the input data is real or fake.
+
 
 
     \begin{multicols}{2}
