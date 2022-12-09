@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.16)  9 DEC 2022 13:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.16)  9 DEC 2022 13:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -417,28 +417,28 @@ Package caption Info: End \AtBeginDocument code.
  [1
 
 {C:/Users/bolla/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<imgs/elisa/ts.jpg, id=11, 680.5425pt x 399.4925pt>
+<imgs/elisa/ts.jpg, id=23, 680.5425pt x 399.4925pt>
 File: imgs/elisa/ts.jpg Graphic file (type jpg)
 <use imgs/elisa/ts.jpg>
-Package pdftex.def Info: imgs/elisa/ts.jpg  used on input line 55.
+Package pdftex.def Info: imgs/elisa/ts.jpg  used on input line 56.
 (pdftex.def)             Requested size: 476.3765pt x 279.64284pt.
 
-Overfull \hbox (6.62148pt too wide) in paragraph at lines 55--56
+Overfull \hbox (6.62148pt too wide) in paragraph at lines 56--57
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
@@ -446,181 +446,193 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--65
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.65 
+l.66 
       [1 <./imgs/elisa/ts.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
-<imgs/elisa/price.jpg, id=18, 553.31718pt x 387.69844pt>
+<imgs/elisa/price.jpg, id=30, 553.31718pt x 387.69844pt>
 File: imgs/elisa/price.jpg Graphic file (type jpg)
 <use imgs/elisa/price.jpg>
-Package pdftex.def Info: imgs/elisa/price.jpg  used on input line 73.
+Package pdftex.def Info: imgs/elisa/price.jpg  used on input line 74.
 (pdftex.def)             Requested size: 165.99643pt x 116.31042pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
-<imgs/elisa/1.jpg, id=19, 481.8pt x 361.35pt>
+<imgs/elisa/1.jpg, id=31, 481.8pt x 361.35pt>
 File: imgs/elisa/1.jpg Graphic file (type jpg)
 <use imgs/elisa/1.jpg>
-Package pdftex.def Info: imgs/elisa/1.jpg  used on input line 79.
+Package pdftex.def Info: imgs/elisa/1.jpg  used on input line 80.
 (pdftex.def)             Requested size: 96.35829pt x 72.2687pt.
-<imgs/elisa/2.jpg, id=20, 481.8pt x 361.35pt>
+<imgs/elisa/2.jpg, id=32, 481.8pt x 361.35pt>
 File: imgs/elisa/2.jpg Graphic file (type jpg)
 <use imgs/elisa/2.jpg>
-Package pdftex.def Info: imgs/elisa/2.jpg  used on input line 80.
+Package pdftex.def Info: imgs/elisa/2.jpg  used on input line 81.
 (pdftex.def)             Requested size: 96.35829pt x 72.2687pt.
-<imgs/elisa/3.jpg, id=21, 481.8pt x 361.35pt>
+<imgs/elisa/3.jpg, id=33, 481.8pt x 361.35pt>
 File: imgs/elisa/3.jpg Graphic file (type jpg)
 <use imgs/elisa/3.jpg>
-Package pdftex.def Info: imgs/elisa/3.jpg  used on input line 81.
+Package pdftex.def Info: imgs/elisa/3.jpg  used on input line 82.
 (pdftex.def)             Requested size: 96.35829pt x 72.2687pt.
-<imgs/elisa/4.jpg, id=22, 481.8pt x 361.35pt>
+<imgs/elisa/4.jpg, id=34, 481.8pt x 361.35pt>
 File: imgs/elisa/4.jpg Graphic file (type jpg)
 <use imgs/elisa/4.jpg>
-Package pdftex.def Info: imgs/elisa/4.jpg  used on input line 82.
+Package pdftex.def Info: imgs/elisa/4.jpg  used on input line 83.
 (pdftex.def)             Requested size: 96.35829pt x 72.2687pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-<imgs/elisa/log.jpg, id=23, 436.63126pt x 549.55313pt>
+<imgs/elisa/log.jpg, id=35, 436.63126pt x 549.55313pt>
 File: imgs/elisa/log.jpg Graphic file (type jpg)
 <use imgs/elisa/log.jpg>
-Package pdftex.def Info: imgs/elisa/log.jpg  used on input line 90.
+Package pdftex.def Info: imgs/elisa/log.jpg  used on input line 91.
 (pdftex.def)             Requested size: 218.3151pt x 274.7759pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
 [2 <./imgs/elisa/price.jpg> <./imgs/elisa/1.jpg> <./imgs/elisa/2.jpg> <./imgs/elisa/3.jpg> <./imgs/elisa/4.jpg> <./imgs/elisa/log.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
-<imgs/elisa/lp.jpg, id=31, 370.38374pt x 53.19875pt>
+<imgs/elisa/lp.jpg, id=43, 370.38374pt x 53.19875pt>
 File: imgs/elisa/lp.jpg Graphic file (type jpg)
 <use imgs/elisa/lp.jpg>
-Package pdftex.def Info: imgs/elisa/lp.jpg  used on input line 108.
+Package pdftex.def Info: imgs/elisa/lp.jpg  used on input line 109.
 (pdftex.def)             Requested size: 222.23195pt x 31.91948pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-<imgs/elisa/dist.jpg, id=33, 313.17pt x 185.69376pt>
+<imgs/elisa/dist.jpg, id=45, 313.17pt x 185.69376pt>
 File: imgs/elisa/dist.jpg Graphic file (type jpg)
 <use imgs/elisa/dist.jpg>
-Package pdftex.def Info: imgs/elisa/dist.jpg  used on input line 114.
+Package pdftex.def Info: imgs/elisa/dist.jpg  used on input line 115.
 (pdftex.def)             Requested size: 187.90344pt x 111.4171pt.
-<imgs/elisa/cl.jpg, id=34, 204.765pt x 53.19875pt>
+<imgs/elisa/cl.jpg, id=46, 204.765pt x 53.19875pt>
 File: imgs/elisa/cl.jpg Graphic file (type jpg)
 <use imgs/elisa/cl.jpg>
-Package pdftex.def Info: imgs/elisa/cl.jpg  used on input line 121.
+Package pdftex.def Info: imgs/elisa/cl.jpg  used on input line 122.
 (pdftex.def)             Requested size: 163.8122pt x 42.55904pt.
 [3 <./imgs/elisa/lp.jpg> <./imgs/elisa/dist.jpg> <./imgs/elisa/cl.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 137--139
+<imgs/stefan/generator-graphic-v1.png, id=64, 419.5675pt x 1013.7875pt>
+File: imgs/stefan/generator-graphic-v1.png Graphic file (type png)
+<use imgs/stefan/generator-graphic-v1.png>
+Package pdftex.def Info: imgs/stefan/generator-graphic-v1.png  used on input line 143.
+(pdftex.def)             Requested size: 125.87122pt x 304.1386pt.
+ [4 <./imgs/stefan/generator-graphic-v1.png>]
+<imgs/stefan/discriminator-graphic-v1.png, id=70, 414.54875pt x 617.30624pt>
+File: imgs/stefan/discriminator-graphic-v1.png Graphic file (type png)
+<use imgs/stefan/discriminator-graphic-v1.png>
+Package pdftex.def Info: imgs/stefan/discriminator-graphic-v1.png  used on input line 151.
+(pdftex.def)             Requested size: 124.36557pt x 185.1933pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--167
 
  []
 
-<imgs/riccardo/small_peaks.png, id=52, 223.43475pt x 105.996pt>
+<imgs/riccardo/small_peaks.png, id=71, 223.43475pt x 105.996pt>
 File: imgs/riccardo/small_peaks.png Graphic file (type png)
 <use imgs/riccardo/small_peaks.png>
-Package pdftex.def Info: imgs/riccardo/small_peaks.png  used on input line 140.
+Package pdftex.def Info: imgs/riccardo/small_peaks.png  used on input line 168.
 (pdftex.def)             Requested size: 156.40326pt x 74.19669pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 141.
+(caption)                particular \caption on input line 169.
 See the caption package documentation for explanation.
 
-<imgs/riccardo/big_peaks.png, id=53, 224.037pt x 107.80275pt>
+<imgs/riccardo/big_peaks.png, id=72, 224.037pt x 107.80275pt>
 File: imgs/riccardo/big_peaks.png Graphic file (type png)
 <use imgs/riccardo/big_peaks.png>
-Package pdftex.def Info: imgs/riccardo/big_peaks.png  used on input line 142.
+Package pdftex.def Info: imgs/riccardo/big_peaks.png  used on input line 170.
 (pdftex.def)             Requested size: 156.82481pt x 75.4614pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 143.
+(caption)                particular \caption on input line 171.
 See the caption package documentation for explanation.
 
-<imgs/riccardo/EX_03.png, id=54, 651.03226pt x 181.27725pt>
+[5 <./imgs/stefan/discriminator-graphic-v1.png (PNG copy)> <./imgs/riccardo/small_peaks.png> <./imgs/riccardo/big_peaks.png>]
+<imgs/riccardo/EX_03.png, id=86, 651.03226pt x 181.27725pt>
 File: imgs/riccardo/EX_03.png Graphic file (type png)
 <use imgs/riccardo/EX_03.png>
-Package pdftex.def Info: imgs/riccardo/EX_03.png  used on input line 163.
+Package pdftex.def Info: imgs/riccardo/EX_03.png  used on input line 191.
 (pdftex.def)             Requested size: 390.62238pt x 108.76718pt.
-[4 <./imgs/riccardo/small_peaks.png> <./imgs/riccardo/big_peaks.png> <./imgs/riccardo/EX_03.png>]
-<imgs/riccardo/serie_comp_1.png, id=70, 227.6505pt x 196.93575pt>
+<imgs/riccardo/serie_comp_1.png, id=87, 227.6505pt x 196.93575pt>
 File: imgs/riccardo/serie_comp_1.png Graphic file (type png)
 <use imgs/riccardo/serie_comp_1.png>
-Package pdftex.def Info: imgs/riccardo/serie_comp_1.png  used on input line 178.
+Package pdftex.def Info: imgs/riccardo/serie_comp_1.png  used on input line 206.
 (pdftex.def)             Requested size: 111.54971pt x 96.49934pt.
-<imgs/riccardo/serie_comp_2.png, id=71, 227.6505pt x 195.73125pt>
+<imgs/riccardo/serie_comp_2.png, id=88, 227.6505pt x 195.73125pt>
 File: imgs/riccardo/serie_comp_2.png Graphic file (type png)
 <use imgs/riccardo/serie_comp_2.png>
-Package pdftex.def Info: imgs/riccardo/serie_comp_2.png  used on input line 179.
+Package pdftex.def Info: imgs/riccardo/serie_comp_2.png  used on input line 207.
 (pdftex.def)             Requested size: 111.54971pt x 95.90913pt.
-<imgs/riccardo/2_res.png, id=72, 410.7345pt x 350.5095pt>
+<imgs/riccardo/2_res.png, id=89, 410.7345pt x 350.5095pt>
 File: imgs/riccardo/2_res.png Graphic file (type png)
 <use imgs/riccardo/2_res.png>
-Package pdftex.def Info: imgs/riccardo/2_res.png  used on input line 189.
+Package pdftex.def Info: imgs/riccardo/2_res.png  used on input line 217.
 (pdftex.def)             Requested size: 246.4426pt x 210.30733pt.
 
-Overfull \hbox (16.5651pt too wide) in paragraph at lines 189--190
+Overfull \hbox (16.5651pt too wide) in paragraph at lines 217--218
  [] 
  []
 
-[5 <./imgs/riccardo/serie_comp_1.png> <./imgs/riccardo/serie_comp_2.png> <./imgs/riccardo/2_res.png>]
-<imgs/riccardo/results_reduced.png, id=84, 767.5074pt x 1184.5053pt>
+[6 <./imgs/riccardo/EX_03.png> <./imgs/riccardo/serie_comp_1.png> <./imgs/riccardo/serie_comp_2.png> <./imgs/riccardo/2_res.png>] [7]
+<imgs/riccardo/results_reduced.png, id=108, 767.5074pt x 1184.5053pt>
 File: imgs/riccardo/results_reduced.png Graphic file (type png)
 <use imgs/riccardo/results_reduced.png>
-Package pdftex.def Info: imgs/riccardo/results_reduced.png  used on input line 207.
+Package pdftex.def Info: imgs/riccardo/results_reduced.png  used on input line 235.
 (pdftex.def)             Requested size: 383.75276pt x 592.2512pt.
- [6 <./imgs/riccardo/results_reduced.png>]
-<imgs/riccardo/series_comparison_README.png, id=91, 899.0388pt x 714.0276pt>
+ [8 <./imgs/riccardo/results_reduced.png>]
+<imgs/riccardo/series_comparison_README.png, id=114, 899.0388pt x 714.0276pt>
 File: imgs/riccardo/series_comparison_README.png Graphic file (type png)
 <use imgs/riccardo/series_comparison_README.png>
-Package pdftex.def Info: imgs/riccardo/series_comparison_README.png  used on input line 212.
+Package pdftex.def Info: imgs/riccardo/series_comparison_README.png  used on input line 240.
 (pdftex.def)             Requested size: 269.71371pt x 214.20993pt.
-<imgs/riccardo/generated.png, id=92, 625.1355pt x 155.3805pt>
+<imgs/riccardo/generated.png, id=115, 625.1355pt x 155.3805pt>
 File: imgs/riccardo/generated.png Graphic file (type png)
 <use imgs/riccardo/generated.png>
-Package pdftex.def Info: imgs/riccardo/generated.png  used on input line 217.
+Package pdftex.def Info: imgs/riccardo/generated.png  used on input line 245.
 (pdftex.def)             Requested size: 437.59186pt x 108.76558pt.
- [7 <./imgs/riccardo/series_comparison_README.png> <./imgs/riccardo/generated.png>] [8] (final_report.aux)
+ [9 <./imgs/riccardo/series_comparison_README.png> <./imgs/riccardo/generated.png>] [10] (final_report.aux)
 Package rerunfilecheck Info: File `final_report.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 908F8500D6C96A16326DBD5F4F9E893C;368.
  ) 
 Here is how much of TeX's memory you used:
- 10956 strings out of 475389
- 181192 string characters out of 2777000
- 538560 words of memory out of 3000000
- 32163 multiletter control sequences out of 15000+600000
+ 10982 strings out of 475389
+ 181861 string characters out of 2777000
+ 538575 words of memory out of 3000000
+ 32181 multiletter control sequences out of 15000+600000
  474030 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,6n,77p,907b,569s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 72i,6n,77p,907b,590s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\bolla\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on final_report.pdf (9 pages, 1294692 bytes).
+Output written on final_report.pdf (11 pages, 1335430 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 38 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 205 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 130 words of extra memory for PDF output out of 10000 (max. 10000000)
 

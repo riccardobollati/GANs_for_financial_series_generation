@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1670562076 "c:/Users/bolla/Desktop/CUHK_courses/IASP_elisa/git_folder/GANs_for_financial_series_generation/report/Final_report/final_report.tex" "final_report.pdf" "final_report" 1670562078
+["pdflatex"] 1670562524 "c:/Users/bolla/Desktop/CUHK_courses/IASP_elisa/git_folder/GANs_for_financial_series_generation/report/Final_report/final_report.tex" "final_report.pdf" "final_report" 1670562527
   "C:/Users/bolla/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1670560355 80937 91001db6d4ae332437b4b739862cda02 ""
   "C:/Users/bolla/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1663552530 11548 d6046664392cf5cd96e67d4cdf8d277f ""
   "C:/Users/bolla/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1663321486 10785261 90a3f2d683350828d993ce999361f278 ""
@@ -77,10 +77,10 @@
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1636710260 32262 2bb622a0aa56c4a7a5cbdfe9d122c15a ""
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/tex/latex/was/gensymb.sty" 1081479500 4755 29d19942d7123701aa6a3876b9ba11b1 ""
-  "c:/Users/bolla/Desktop/CUHK_courses/IASP_elisa/git_folder/GANs_for_financial_series_generation/report/Final_report/final_report.tex" 1670562075 19055 6bb3d67c27e8f928cd9c85e5549987b1 ""
-  "final_report.aux" 1670562078 826 d1e5fc13ef60119ad989cff918c0ac38 "pdflatex"
-  "final_report.out" 0 -1 0 "pdflatex"
-  "final_report.tex" 1670562075 19055 6bb3d67c27e8f928cd9c85e5549987b1 ""
+  "c:/Users/bolla/Desktop/CUHK_courses/IASP_elisa/git_folder/GANs_for_financial_series_generation/report/Final_report/final_report.tex" 1670562520 24160 5e2ad8975d1e06f0c356ddb8f569bd77 ""
+  "final_report.aux" 1670562527 1164 491e87324022921384f58156809e0c16 "pdflatex"
+  "final_report.out" 1670562527 368 908f8500d6c96a16326dbd5f4f9e893c "pdflatex"
+  "final_report.tex" 1670562520 24160 5e2ad8975d1e06f0c356ddb8f569bd77 ""
   "imgs/elisa/1.jpg" 1670560247 25921 d845d0104ce6af95a993615afccaeaa0 ""
   "imgs/elisa/2.jpg" 1670560247 27153 f8b8513928d00c93c11e18a48be0cf91 ""
   "imgs/elisa/3.jpg" 1670560247 27752 d9ac7ac69df0f23736d2b274b82b3ebf ""
@@ -100,6 +100,8 @@
   "imgs/riccardo/serie_comp_2.png" 1670384259 22743 cc0f0bfca7415256b6a0f8e7505b8b8e ""
   "imgs/riccardo/series_comparison_README.png" 1670162614 218026 e4b86efe2e639862d1c782fea321d90f ""
   "imgs/riccardo/small_peaks.png" 1669820025 73938 012b184a6c51b1fa278646bf81ea0469 ""
+  "imgs/stefan/discriminator-graphic-v1.png" 1670484697 16584 53663295b5f1e37604e009ff866cada0 ""
+  "imgs/stefan/generator-graphic-v1.png" 1670483074 27206 c66b9b6de71f6769f94fa9101d16cbbd ""
   (generated)
   "final_report.aux"
   "final_report.log"
