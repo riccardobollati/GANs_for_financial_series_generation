@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1670569442 "c:/Users/bolla/Desktop/CUHK_courses/IASP_elisa/git_folder/GANs_for_financial_series_generation/report/Final_report/final_report.tex" "final_report.pdf" "final_report" 1670569445
+["pdflatex"] 1670652779 "c:/Users/bolla/Desktop/CUHK_courses/IASP_elisa/git_folder/GANs_for_financial_series_generation/report/Final_report/final_report.tex" "final_report.pdf" "final_report" 1670652783
   "C:/Users/bolla/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1670560355 80937 91001db6d4ae332437b4b739862cda02 ""
   "C:/Users/bolla/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1663552530 11548 d6046664392cf5cd96e67d4cdf8d277f ""
   "C:/Users/bolla/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1663321486 10785261 90a3f2d683350828d993ce999361f278 ""
@@ -75,10 +75,10 @@
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1636710260 32262 2bb622a0aa56c4a7a5cbdfe9d122c15a ""
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/tex/latex/was/gensymb.sty" 1081479500 4755 29d19942d7123701aa6a3876b9ba11b1 ""
-  "c:/Users/bolla/Desktop/CUHK_courses/IASP_elisa/git_folder/GANs_for_financial_series_generation/report/Final_report/final_report.tex" 1670569438 23708 c6c8b0401fb7762b9cd4551bf827f001 ""
-  "final_report.aux" 1670569445 1157 687a3daac447bb0845e83f1b4c75c107 "pdflatex"
-  "final_report.out" 1670569445 368 908f8500d6c96a16326dbd5f4f9e893c "pdflatex"
-  "final_report.tex" 1670569438 23708 c6c8b0401fb7762b9cd4551bf827f001 ""
+  "c:/Users/bolla/Desktop/CUHK_courses/IASP_elisa/git_folder/GANs_for_financial_series_generation/report/Final_report/final_report.tex" 1670652777 23716 fa1497d35a72c9deb2e6bed1263884a5 ""
+  "final_report.aux" 1670652782 1157 687a3daac447bb0845e83f1b4c75c107 "pdflatex"
+  "final_report.out" 1670652782 368 908f8500d6c96a16326dbd5f4f9e893c "pdflatex"
+  "final_report.tex" 1670652777 23716 fa1497d35a72c9deb2e6bed1263884a5 ""
   "imgs/elisa/1.jpg" 1670560247 25921 d845d0104ce6af95a993615afccaeaa0 ""
   "imgs/elisa/2.jpg" 1670560247 27153 f8b8513928d00c93c11e18a48be0cf91 ""
   "imgs/elisa/3.jpg" 1670560247 27752 d9ac7ac69df0f23736d2b274b82b3ebf ""
