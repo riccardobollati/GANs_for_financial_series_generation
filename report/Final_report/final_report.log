@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.16)  10 DEC 2022 14:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.16)  10 DEC 2022 15:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -543,13 +543,13 @@ File: imgs/elisa/cl.jpg Graphic file (type jpg)
 Package pdftex.def Info: imgs/elisa/cl.jpg  used on input line 120.
 (pdftex.def)             Requested size: 163.8122pt x 42.55904pt.
 [3 <./imgs/elisa/lp.jpg> <./imgs/elisa/dist.jpg> <./imgs/elisa/cl.jpg>]
-<imgs/stefan/generator-graphic-v1.png, id=63, 419.5675pt x 1013.7875pt>
+<imgs/stefan/generator-graphic-v1.png, id=65, 419.5675pt x 1013.7875pt>
 File: imgs/stefan/generator-graphic-v1.png Graphic file (type png)
 <use imgs/stefan/generator-graphic-v1.png>
 Package pdftex.def Info: imgs/stefan/generator-graphic-v1.png  used on input line 141.
 (pdftex.def)             Requested size: 125.87122pt x 304.1386pt.
  [4 <./imgs/stefan/generator-graphic-v1.png>]
-<imgs/stefan/discriminator-graphic-v1.png, id=69, 414.54875pt x 617.30624pt>
+<imgs/stefan/discriminator-graphic-v1.png, id=73, 414.54875pt x 617.30624pt>
 File: imgs/stefan/discriminator-graphic-v1.png Graphic file (type png)
 <use imgs/stefan/discriminator-graphic-v1.png>
 Package pdftex.def Info: imgs/stefan/discriminator-graphic-v1.png  used on input line 149.
@@ -559,7 +559,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--166
 
  []
 
-<imgs/riccardo/small_peaks.png, id=70, 223.43475pt x 105.996pt>
+<imgs/riccardo/small_peaks.png, id=74, 223.43475pt x 105.996pt>
 File: imgs/riccardo/small_peaks.png Graphic file (type png)
 <use imgs/riccardo/small_peaks.png>
 Package pdftex.def Info: imgs/riccardo/small_peaks.png  used on input line 167.
@@ -569,7 +569,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 168.
 See the caption package documentation for explanation.
 
-<imgs/riccardo/big_peaks.png, id=71, 224.037pt x 107.80275pt>
+<imgs/riccardo/big_peaks.png, id=75, 224.037pt x 107.80275pt>
 File: imgs/riccardo/big_peaks.png Graphic file (type png)
 <use imgs/riccardo/big_peaks.png>
 Package pdftex.def Info: imgs/riccardo/big_peaks.png  used on input line 169.
@@ -580,22 +580,22 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [5 <./imgs/stefan/discriminator-graphic-v1.png (PNG copy)> <./imgs/riccardo/small_peaks.png> <./imgs/riccardo/big_peaks.png>]
-<imgs/riccardo/EX_03.png, id=85, 651.03226pt x 181.27725pt>
+<imgs/riccardo/EX_03.png, id=89, 651.03226pt x 181.27725pt>
 File: imgs/riccardo/EX_03.png Graphic file (type png)
 <use imgs/riccardo/EX_03.png>
 Package pdftex.def Info: imgs/riccardo/EX_03.png  used on input line 190.
 (pdftex.def)             Requested size: 390.62238pt x 108.76718pt.
-<imgs/riccardo/serie_comp_1.png, id=86, 227.6505pt x 196.93575pt>
+<imgs/riccardo/serie_comp_1.png, id=90, 227.6505pt x 196.93575pt>
 File: imgs/riccardo/serie_comp_1.png Graphic file (type png)
 <use imgs/riccardo/serie_comp_1.png>
 Package pdftex.def Info: imgs/riccardo/serie_comp_1.png  used on input line 205.
 (pdftex.def)             Requested size: 111.54971pt x 96.49934pt.
-<imgs/riccardo/serie_comp_2.png, id=87, 227.6505pt x 195.73125pt>
+<imgs/riccardo/serie_comp_2.png, id=91, 227.6505pt x 195.73125pt>
 File: imgs/riccardo/serie_comp_2.png Graphic file (type png)
 <use imgs/riccardo/serie_comp_2.png>
 Package pdftex.def Info: imgs/riccardo/serie_comp_2.png  used on input line 206.
 (pdftex.def)             Requested size: 111.54971pt x 95.90913pt.
-<imgs/riccardo/2_res.png, id=88, 410.7345pt x 350.5095pt>
+<imgs/riccardo/2_res.png, id=92, 410.7345pt x 350.5095pt>
 File: imgs/riccardo/2_res.png Graphic file (type png)
 <use imgs/riccardo/2_res.png>
 Package pdftex.def Info: imgs/riccardo/2_res.png  used on input line 216.
@@ -606,18 +606,18 @@ Overfull \hbox (16.5651pt too wide) in paragraph at lines 216--217
  []
 
 [6 <./imgs/riccardo/EX_03.png> <./imgs/riccardo/serie_comp_1.png> <./imgs/riccardo/serie_comp_2.png> <./imgs/riccardo/2_res.png>] [7]
-<imgs/riccardo/results_reduced.png, id=107, 767.5074pt x 1184.5053pt>
+<imgs/riccardo/results_reduced.png, id=111, 767.5074pt x 1184.5053pt>
 File: imgs/riccardo/results_reduced.png Graphic file (type png)
 <use imgs/riccardo/results_reduced.png>
 Package pdftex.def Info: imgs/riccardo/results_reduced.png  used on input line 234.
 (pdftex.def)             Requested size: 383.75276pt x 592.2512pt.
  [8 <./imgs/riccardo/results_reduced.png>]
-<imgs/riccardo/series_comparison_README.png, id=113, 899.0388pt x 714.0276pt>
+<imgs/riccardo/series_comparison_README.png, id=117, 899.0388pt x 714.0276pt>
 File: imgs/riccardo/series_comparison_README.png Graphic file (type png)
 <use imgs/riccardo/series_comparison_README.png>
 Package pdftex.def Info: imgs/riccardo/series_comparison_README.png  used on input line 239.
 (pdftex.def)             Requested size: 449.5183pt x 357.01292pt.
-<imgs/riccardo/generated.png, id=114, 625.1355pt x 155.3805pt>
+<imgs/riccardo/generated.png, id=118, 625.1355pt x 155.3805pt>
 File: imgs/riccardo/generated.png Graphic file (type png)
 <use imgs/riccardo/generated.png>
 Package pdftex.def Info: imgs/riccardo/generated.png  used on input line 245.
@@ -627,17 +627,17 @@ Package rerunfilecheck Info: File `final_report.out' has not changed.
 (rerunfilecheck)             Checksum: 908F8500D6C96A16326DBD5F4F9E893C;368.
  ) 
 Here is how much of TeX's memory you used:
- 10979 strings out of 475389
- 181815 string characters out of 2777000
- 536568 words of memory out of 3000000
- 32180 multiletter control sequences out of 15000+600000
- 473684 words of font info for 43 fonts, out of 8000000 for 9000
+ 10981 strings out of 475389
+ 181838 string characters out of 2777000
+ 536569 words of memory out of 3000000
+ 32181 multiletter control sequences out of 15000+600000
+ 474030 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,6n,77p,909b,592s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\bolla\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on final_report.pdf (11 pages, 1319984 bytes).
+ 72i,6n,77p,909b,593s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\bolla\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on final_report.pdf (11 pages, 1336988 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
+ 206 PDF objects out of 1000 (max. 8388607)
  42 named destinations out of 1000 (max. 500000)
  130 words of extra memory for PDF output out of 10000 (max. 10000000)
 

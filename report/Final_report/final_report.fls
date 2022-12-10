@@ -719,6 +719,7 @@ INPUT .\imgs\riccardo\generated.png
 INPUT .\imgs\riccardo\generated.png
 INPUT .\imgs\riccardo\generated.png
 INPUT .\imgs\riccardo\generated.png
+INPUT C:\Users\bolla\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 INPUT final_report.aux
 INPUT .\final_report.out
 INPUT .\final_report.out
@@ -746,3 +747,5 @@ INPUT C:\Users\bolla\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\bolla\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\bolla\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\bolla\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\bolla\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Users\bolla\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb

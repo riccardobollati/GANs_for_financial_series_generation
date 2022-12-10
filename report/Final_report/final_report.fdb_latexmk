@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1670652779 "c:/Users/bolla/Desktop/CUHK_courses/IASP_elisa/git_folder/GANs_for_financial_series_generation/report/Final_report/final_report.tex" "final_report.pdf" "final_report" 1670652783
+["pdflatex"] 1670658866 "c:/Users/bolla/Desktop/CUHK_courses/IASP_elisa/git_folder/GANs_for_financial_series_generation/report/Final_report/final_report.tex" "final_report.pdf" "final_report" 1670658869
   "C:/Users/bolla/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1670560355 80937 91001db6d4ae332437b4b739862cda02 ""
   "C:/Users/bolla/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1663552530 11548 d6046664392cf5cd96e67d4cdf8d277f ""
   "C:/Users/bolla/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1663321486 10785261 90a3f2d683350828d993ce999361f278 ""
@@ -11,6 +11,7 @@
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr12.tfm" 1136765053 1288 655e228510b4c2a1abe905c368440826 ""
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr17.tfm" 1136765053 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr9.tfm" 1136765053 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
+  "C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti10.tfm" 1136765053 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247596666 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb" 1247596667 32298 c6d25bb16d1eac01ebdc6d7084126a1e ""
@@ -22,6 +23,7 @@
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1247596666 32716 08e384dc442464e7285e891af9f45947 ""
+  "C:/Users/bolla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1247596667 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty" 1575571100 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcalc.sty" 1576433602 40635 c40361e206be584d448876bba8a64a3b ""
@@ -75,10 +77,10 @@
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1636710260 32262 2bb622a0aa56c4a7a5cbdfe9d122c15a ""
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/bolla/AppData/Local/Programs/MiKTeX/tex/latex/was/gensymb.sty" 1081479500 4755 29d19942d7123701aa6a3876b9ba11b1 ""
-  "c:/Users/bolla/Desktop/CUHK_courses/IASP_elisa/git_folder/GANs_for_financial_series_generation/report/Final_report/final_report.tex" 1670652777 23716 fa1497d35a72c9deb2e6bed1263884a5 ""
-  "final_report.aux" 1670652782 1157 687a3daac447bb0845e83f1b4c75c107 "pdflatex"
-  "final_report.out" 1670652782 368 908f8500d6c96a16326dbd5f4f9e893c "pdflatex"
-  "final_report.tex" 1670652777 23716 fa1497d35a72c9deb2e6bed1263884a5 ""
+  "c:/Users/bolla/Desktop/CUHK_courses/IASP_elisa/git_folder/GANs_for_financial_series_generation/report/Final_report/final_report.tex" 1670658863 24179 0d9ccf00bbca7a3ec4ed33caca621006 ""
+  "final_report.aux" 1670658869 1184 830a004bc5d5c8845e2cedb3eeca4a7e "pdflatex"
+  "final_report.out" 1670658869 368 908f8500d6c96a16326dbd5f4f9e893c "pdflatex"
+  "final_report.tex" 1670658863 24179 0d9ccf00bbca7a3ec4ed33caca621006 ""
   "imgs/elisa/1.jpg" 1670560247 25921 d845d0104ce6af95a993615afccaeaa0 ""
   "imgs/elisa/2.jpg" 1670560247 27153 f8b8513928d00c93c11e18a48be0cf91 ""
   "imgs/elisa/3.jpg" 1670560247 27752 d9ac7ac69df0f23736d2b274b82b3ebf ""
